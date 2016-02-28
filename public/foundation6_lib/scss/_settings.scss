@@ -91,9 +91,13 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
+// $grid-column-responsive-gutter: (
+//   small: 20px,
+//   medium: 30px,
+// );
 $grid-column-responsive-gutter: (
-  small: 20px,
-  medium: 30px,
+  small: 100px,
+  medium: 100px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -548,7 +552,7 @@ $tooltip-radius: $global-radius;
 // 35. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: 0.2rem;
 $topbar-background: $light-gray;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

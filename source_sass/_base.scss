@@ -1,7 +1,88 @@
 // Add any custom Sass & CSS here
+//
+// body{
+// 	@include breakpoint(medium down){
+// 		background: red !important;
+// 	}
+// }
 
-body{
-	@include breakpoint(medium down){
-		background: red !important;
+// Add any custom Sass & CSS here
+.top-bar{
+  -o-transition: .5s;
+      -ms-transition: .5s;
+      -moz-transition: .5s;
+      -webkit-transition: .5s;
+      transition: .5s;
+  .top-bar-left a{
+    -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+  }
+
+  .top-bar-right a{
+        // &:hover {
+        //   color: $white;
+        //   //color: #FFFFFF;
+        // }
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+  }
+  .top-bar-right a{
+        &:hover {
+          color: $white;
+          //color: #FFFFFF;
+        }
+      }
+}
+.fixed{
+  position: fixed;
+  width: 100%;
+	z-index: 999;
+}
+
+#landing {
+  background: url(../data/pics/ski-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+
+  #name{
+    //http://css-tricks.com/centering-percentage-widthheight-elements/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  #description{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    -webkit-transform: translate(-50%, -60%);
+    -o-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+  }
+}
+.slick-prev:before, .slick-next:before {
+    color:red !important;
+}
+#footer{
+	display:table;
+	width: 100%;
+	#social{
+			//http://css-tricks.com/centering-percentage-widthheight-elements/
+			display:table-cell;
+			vertical-align:middle;
 	}
 }

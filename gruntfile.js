@@ -61,7 +61,7 @@ module.exports = function(grunt) {
                 'public/foundation6_lib/scss/typography/*.scss',
                 'public/foundation6_lib/scss/util/*.scss',
         ],
-        tasks: ['compass:foundation']
+        tasks: ['compass:dev', 'compass:foundation']
       }, //sass_foundation
       html: {
         files: ['public/*.html']

@@ -3,45 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+  <title>Alek Festekjian</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- Carousel -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
+  <div id="nav-bar" class="fixed">
+    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-topbar role="navigation">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Alek</div>
     </div>
-  </nav>
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
-	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
-  </section>
 
-  <!-- Scripts -->
-  
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./foundation6_lib/js/foundation.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-  <script src="http://localhost:35729/livereload.js"></script>
-</body>
-</html>
+    <div class="top-bar" id="main-menu">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li><a id="nav-button" href="Name">Alek Festekjian</a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+          <li><a id="nav-button" href="#About">About Me</a></li>
+          <li><a id="nav-button" href="#Experience">Experience</a></li>
+          <li><a id="nav-button" href="#Books">Books</a></li>
+          <li><a id="nav-button" href="#Video">Video</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 medium-6 columns" id="landing">
+    <div class="text-center">
+      <h1 id="name">Alek Festekjian</h1>
+      <span id="description">Student - Developer - Skier</span>
+    </div>
+  </div>
+
+
+  <div class="column medium-12 text-center" id="About">
+    <div class="text-center">
+      <h1>About Me</h1>
+      <p>Hi, my name is Alek. I am currently a junior in Computer Science at the University of Illinois. You can checkout my Resume <a href="./data/Resume.pdf" target="_blank">here.</a>
+        When I am not coding I am usually working out, playing sports or reading a book.</p>
+        <!--Add technologies I've worked with -->
+      </div>
+    </div>
+
+    <section class="row" >
+      <div class="small-8 small-centered columns" id="Experience">
+
+        <div class="text-center">
+          <h1>Where I have worked.</h1>
+          <br><br>
+        </div>
+
+        <div class="text-center" id="Internships">
+          <div id="UIUC">
+            <h1>University of Illinois</h1>
+            <h2>Systems Programming TA</h2>
+            <p>Conduct weekly office hours to aid students in debugging and understanding machine problems</p>
+            <p> Helping build and maintain an auto grading framework to automatically grade assignments
+              for over 200 students</p>
+            </div>
+
+            <div id="IBM">
+              <h1>IBM</h1>
+              <h2>SmartCloud Notes Intern</h2>
+              <p>Leveraged Kafka, an open-source message broker,
+                to develop a Proof of Concept distributed queue processing system
+                to improve processing speed and reliability for
+                user provisioning and company directory synchronization
+                for a cloud based messaging system</p>
+                <p>Proof of Concept project led to the creation of a new long-term development project.</p>
+
+              </div>
+
+              <div id="Wolters Kluwer">
+                <h1>Wolters Kluwer Financial Services</h1>
+                <h2>Software Product Intern</h2>
+                <p>Worked collaboratively to create a Proof of Concept for a new product
+                  utilizing multiple technologies such as
+                  Microsoft SQL, Spring Restful Services, HTML, and JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <!-- <button id="left" type="button" class="slick-prev">Previous</button>
+            <button id="right"type="button" class="slick-next">Next</button> -->
+          </section>
+
+          <section class="row" id="Books">
+            <!-- Armada Modal -->
+            <div class="alert columns small-12 medium-4">
+              <div id="Books">
+                <a data-open="Armada"><img src="./data/pics/Armada.jpg" alt="Armada"></a>
+              </div>
+            </div>
+            <div class="reveal" id="Armada" data-reveal>
+              <h1>Armada</h1>
+              <!-- <p class="lead">Your couch. It is mine.</p> -->
+              <p>High school student Zack Lightman glances out his classroom window and spots a UFO.
+                The ship he’s staring at is straight out of the video game he plays every night,
+                a hugely popular online flight simulator called Armada,
+                in which gamers protect Earth from alien invaders.</p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!--Thinking Fast and Slow Modal -->
+              <div class="alert columns small-12 medium-4">
+                <div id="Books">
+                  <a data-open="FastBook"> <img src="./data/pics/FastBook.jpg" alt="Thinking Fast and Slow"></a>
+                </div>
+              </div>
+              <div class="reveal" id="FastBook" data-reveal>
+                <h1>Thinking Fast and Slow</h1>
+                <!-- <p class="lead">Your couch. It is mine.</p> -->
+                <p>The book's central thesis is a dichotomy between two modes of thought:
+                  "System 1" is fast, instinctive and emotional; "System 2" is slower,
+                  more deliberative, and more logical. The book delineates cognitive biases associated with each type of thinking,
+                  starting with Kahneman's own research on loss aversion.
+                  From framing choices to people's tendency to substitute an easy-to-answer question for one that is harder,
+                  the book highlights several decades of academic research to suggest that people place too much confidence in human judgment.</p>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!-- Mastery Book -->
+                <div class="alert columns small-12 medium-4">
+                  <div id="Books">
+                    <a data-open="Mastery"> <img src="./data/pics/mastery.jpg" alt="Mastery"></a>
+                  </div>
+                </div>
+                <div class="reveal" id="Mastery" data-reveal>
+                  <h1>Mastery</h1>
+                  <!-- <p class="lead">Your couch. It is mine.</p> -->
+                  <p>Robery Greene explains how to become a leader in any given field by examining the
+                    lives and pathways to success of historical masters
+                    such as Mozart, Einstein and Darwin, as well as
+                    "living masters" which Greene interviewed—including Paul Graham, Freddie Roach, Santiago Calatrava,
+                    Temple Grandin, Yoky Matsuoka, V.S. Ramachandran, Teresita Fernandez, Cesar Rodriguez, and Daniel Everett</p>
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </section>
+
+                <section id="Video">
+
+                  <div class="flex-video">
+                    <iframe src="https://www.youtube.com/embed/khOaAHK7efc" id="video" allowfullscreen></iframe>
+                  </div>
+                </section>
+
+                <footer id="footer">
+                  <div class="text-center"id="social">
+                    <a href="https://www.github.com/alekfestekjian" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+                    <a href="https://www.facebook.com/alek.festekjian" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
+                    <a href="https://www.twitter.com/afestekjian" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                    <a href="https://www.linkedin.com/in/festekjian" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                    <a href=mailto:festekj2@illinois.edu target="_blank"><i class="fa fa-envelope fa-3x"></i></a>
+                  </div>
+                </footer>
+                <!-- Scripts -->
+                <script src="./lib/jquery-2.1.3.min/index.js"></script>
+                <script src="./foundation6_lib/js/foundation.min.js"></script>
+                <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+                <script src="./js/script.js"></script>
+                <script>
+                $(document).foundation();
+                </script>
+                <script src="http://localhost:35729/livereload.js"></script>
+              </body>
+              </html>
