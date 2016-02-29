@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Alek Festekjian</title>
+  <link rel="icon" type="image/ico" href="./data/initials.ico?">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/styles.css">
@@ -17,47 +18,63 @@
 </head>
 
 <body>
-  <div id="nav-bar" class="fixed">
-    <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-topbar role="navigation">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Alek</div>
-    </div>
-
-    <div class="top-bar" id="main-menu">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li><a id="nav-button" href="Name">Alek Festekjian</a></li>
-        </ul>
+    <div id="nav-bar" class="fixed">
+      <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-topbar role="navigation">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Alek</div>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-          <li><a id="nav-button" href="#About">About Me</a></li>
-          <li><a id="nav-button" href="#Experience">Experience</a></li>
-          <li><a id="nav-button" href="#Books">Books</a></li>
-          <li><a id="nav-button" href="#Video">Video</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
-  <div class="small-12 medium-6 columns" id="landing">
-    <div class="text-center">
-      <h1 id="name">Alek Festekjian</h1>
-      <span id="description">Student - Developer - Skier</span>
-    </div>
-  </div>
-
-
-  <div class="column medium-12 text-center" id="About">
-    <div class="text-center">
-      <h1>About Me</h1>
-      <p>Hi, my name is Alek. I am currently a junior in Computer Science at the University of Illinois. You can checkout my Resume <a href="./data/Resume.pdf" target="_blank">here.</a>
-        When I am not coding I am usually working out, playing sports or reading a book.</p>
-        <!--Add technologies I've worked with -->
+      <div class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li><a id="nav-button" href="#">Alek Festekjian</a></li>
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
+            <li><a id="About-button" href="#About">About Me</a></li>
+            <li><a id="Experience-button" href="#Experience">Experience</a></li>
+            <li><a id="Books-button" href="#Books">Books</a></li>
+            <li><a id="Video-button" href="#Video">Video</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <section class="row" >
+    <div class="small-12 medium-6 columns" id="landing">
+      <div class="text-center">
+        <h1 id="name">Alek Festekjian</h1>
+        <span id="description">Student - Developer - Skier</span>
+      </div>
+    </div>
+
+    <section class="row">
+        <div class="column medium-4 text-center" id="About">
+          <div class="text-center">
+            <h1>About Me</h1>
+            <p>Hi, my name is Alek. I am currently a junior in Computer Science at the University of Illinois. You can checkout my Resume <a href="./data/Resume.pdf" target="_blank">here.</a>
+              When I am not coding I am usually working out, playing sports or reading a book.</p>
+          </div>
+        </div>
+        <div class="column medium-4 text-center" id="About">
+          <div class="text-center">
+            <h1>Languages</h1>
+            <p><strong>Proficient</strong> in C, C++, Python,Java, Kafka</p>
+            <p><strong>Experience</strong> with Ruby, R, NLTK, Numpy, Scikit, Javascript, jQuery, Git, HTML5/CSS,MIPS</p>
+          </div>
+        </div>
+        <div class="column medium-4 text-center" id="About">
+          <div class="text-center">
+            <h1>Hobbies</h1>
+            <p>When I am not coding or studying I love to a variety of activities.
+              I read tons of books, I go rock climbing,
+              I love working out and playing sports
+              such as Skiing, Basketball, Soccer and Football!</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="row">
       <div class="small-8 small-centered columns" id="Experience">
 
         <div class="text-center">
@@ -106,6 +123,7 @@
                 <a data-open="Armada"><img src="./data/pics/Armada.jpg" alt="Armada"></a>
               </div>
             </div>
+
             <div class="reveal" id="Armada" data-reveal>
               <h1>Armada</h1>
               <!-- <p class="lead">Your couch. It is mine.</p> -->
@@ -118,11 +136,13 @@
                 </button>
               </div>
               <!--Thinking Fast and Slow Modal -->
+
               <div class="alert columns small-12 medium-4">
                 <div id="Books">
                   <a data-open="FastBook"> <img src="./data/pics/FastBook.jpg" alt="Thinking Fast and Slow"></a>
                 </div>
               </div>
+
               <div class="reveal" id="FastBook" data-reveal>
                 <h1>Thinking Fast and Slow</h1>
                 <!-- <p class="lead">Your couch. It is mine.</p> -->
@@ -137,11 +157,13 @@
                   </button>
                 </div>
                 <!-- Mastery Book -->
+
                 <div class="alert columns small-12 medium-4">
                   <div id="Books">
                     <a data-open="Mastery"> <img src="./data/pics/mastery.jpg" alt="Mastery"></a>
                   </div>
                 </div>
+
                 <div class="reveal" id="Mastery" data-reveal>
                   <h1>Mastery</h1>
                   <!-- <p class="lead">Your couch. It is mine.</p> -->
@@ -150,20 +172,19 @@
                     such as Mozart, Einstein and Darwin, as well as
                     "living masters" which Greene interviewed—including Paul Graham, Freddie Roach, Santiago Calatrava,
                     Temple Grandin, Yoky Matsuoka, V.S. Ramachandran, Teresita Fernandez, Cesar Rodriguez, and Daniel Everett</p>
-                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
                       <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                </section>
+                  </button>
+                </div>
+            </section>
 
-                <section id="Video">
+            <section id="Video1">
+              <div class="columns small-centered text-center" id="Video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/khOaAHK7efc" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </section>
 
-                  <div class="flex-video">
-                    <iframe src="https://www.youtube.com/embed/khOaAHK7efc" id="video" allowfullscreen></iframe>
-                  </div>
-                </section>
-
-                <footer id="footer">
+            <footer id="footer">
                   <div class="text-center"id="social">
                     <a href="https://www.github.com/alekfestekjian" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
                     <a href="https://www.facebook.com/alek.festekjian" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
@@ -171,15 +192,15 @@
                     <a href="https://www.linkedin.com/in/festekjian" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
                     <a href=mailto:festekj2@illinois.edu target="_blank"><i class="fa fa-envelope fa-3x"></i></a>
                   </div>
-                </footer>
+            </footer>
                 <!-- Scripts -->
-                <script src="./lib/jquery-2.1.3.min/index.js"></script>
-                <script src="./foundation6_lib/js/foundation.min.js"></script>
-                <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-                <script src="./js/script.js"></script>
-                <script>
-                $(document).foundation();
-                </script>
-                <script src="http://localhost:35729/livereload.js"></script>
-              </body>
-              </html>
+    <script src="./lib/jquery-2.1.3.min/index.js"></script>
+    <script src="./foundation6_lib/js/foundation.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

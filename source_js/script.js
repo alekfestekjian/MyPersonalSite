@@ -9,7 +9,6 @@
 // })
 
 $(document).on("scroll",function(){
-
   if ($(this).scrollTop() > 100) {
         $('.top-bar-left a').css('font-size', '75%');
         $('.top-bar-right a').css('font-size', '75%');
@@ -23,17 +22,21 @@ $(document).on("scroll",function(){
 
 $('a[href^="#"]').on('click',function (e) {
   //get child hash
-    var target = this.hash;
-    var $target = $(target);
-    e.preventDefault();
-    // CHeck for when smaller screensize
-    $('html, body').stop().animate({
-        'scrollTop': $target.offset().top -$('.top-bar').height()
-    }, 900, 'swing', function () {
-        window.location.hash = target;
-    });
 
+    // CHeck for when smaller screensize
+    Foundation.MediaQuery.current
+    if (Foundation.MediaQuery.atLeast('medium')) {
+      var target = this.hash;
+      var $target = $(target);
+      e.preventDefault();
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top -$('.top-bar').outerHeight()
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+    }
 });
+
 $(document).ready(function(){
   $('#Internships').eq($('.slick-active').index()).addClass('animated fadeInDown');
   $('#Internships').slick({
@@ -49,4 +52,37 @@ $(document).ready(function(){
 
   }]
   });
+});
+
+function onScreen() {
+    // Check if the top of the page collides with each section
+    Foundation.MediaQuery.current
+    if (Foundation.MediaQuery.atLeast('medium')) {
+      $('div').each(function() {
+          var windowScroll = $(document).scrollTop();
+          var navHeight = $('.top-bar').height();
+
+          if( windowScroll + navHeight>= $(this).offset().top && windowScroll + navHeight < $(this).offset().top + $(this).height()) {
+              $('.top-bar-right ul a#' + $(this).attr('id')+'-button').addClass('highlight');
+            } else {
+              $('.top-bar-right ul a#' + $(this).attr('id')+'-button').removeClass('highlight');
+            }
+
+          });
+          $('section').each(function() {
+            var windowScroll = $(document).scrollTop();
+            var navHeight = $('.top-bar').height();
+
+            if( windowScroll + navHeight >= $(this).offset().top && windowScroll + navHeight < $(this).offset().top + $(this).height()) {
+              $('.top-bar-right ul a#' + $(this).attr('id')+'-button').addClass('highlight');
+            } else {
+              $('.top-bar-right ul a#' + $(this).attr('id')+'-button').removeClass('highlight');
+            }
+
+          });
+    }
+}
+
+$(window).on('scroll resize', function () {
+    onScreen();
 });
