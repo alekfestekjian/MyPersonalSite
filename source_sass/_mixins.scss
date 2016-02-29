@@ -1,7 +1,20 @@
 // Insert your mixins
 @mixin scale($size){
 
-    -webkit-transform: scale($size); 
+    -webkit-transform: scale($size);
     -moz-box-shadow: scale($size);
     transform: scale($size);
+}
+@mixin translate($left,$right){
+  transform: translate($left,$right);
+  -webkit-transform: translate($left,$right);
+  -o-transform: translate($left,$right);
+  -ms-transform: translate($left,$right);
+}
+@mixin transition($sec){
+  -o-transition: $sec;
+  -ms-transition: $sec;
+  -moz-transition: $sec;
+  -webkit-transition: $sec;
+  transition: $sec;
 }

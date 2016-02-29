@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,900italic,900,700italic,700,400italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -179,12 +180,18 @@
             </section>
 
             <section id="Video1">
-              <div class="columns small-centered text-center" id="Video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/khOaAHK7efc" frameborder="0" allowfullscreen></iframe>
+              <div class="columns small-centered text-center" id="Video" >
+                <video width="100%" height="100%" controls>
+                  <source src="./data/pics/noObject.mp4" type="video/mp4" class="cover" >
+                  Your browser does not support this video.
+                </video>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/khOaAHK7efc" frameborder="0" allowfullscreen></iframe> -->
               </div>
             </section>
+            <!-- Chat section -->
 
             <footer id="footer">
+
                   <div class="text-center"id="social">
                     <a href="https://www.github.com/alekfestekjian" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
                     <a href="https://www.facebook.com/alek.festekjian" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
@@ -198,6 +205,9 @@
     <script src="./foundation6_lib/js/foundation.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="./js/script.js"></script>
+    <!-- <script src="./foundation6_lib/js/foundation/foundation.magellan.js"></script>
+    <script src="./foundation6_lib/js/foundation/foundation.core.js"></script> -->
+
     <script>
     $(document).foundation();
     </script>

@@ -1,51 +1,48 @@
 // Add any custom Sass & CSS here
-//
-// body{
-// 	@include breakpoint(medium down){
-// 		background: red !important;
-// 	}
-// }
-
-// Add any custom Sass & CSS here
 .top-bar{
-      -o-transition: .5s;
-      -ms-transition: .5s;
-      -moz-transition: .5s;
-      -webkit-transition: .5s;
-      transition: .5s;
-  .top-bar-left a{
-        -o-transition: .5s;
-        -ms-transition: .5s;
-        -moz-transition: .5s;
-        -webkit-transition: .5s;
-        transition: .5s;
+  // background: #;round-color: transparent;
+  top-bar.show{
+    background-color: #777 !important;
+  }
+  @include transition(.5s);
+  .top-bar-left
+  {
+    ul{
+      a{
+          font-family: $nav-bar !important;
+          color: $white;
+          @include transition(.5s);
+      }
+
+    }
+    ul.show{
+      background-color: #777 !important;
+
+    }
   }
 
-  .top-bar-right a{
-          -o-transition: .5s;
-          -ms-transition: .5s;
-          -moz-transition: .5s;
-          -webkit-transition: .5s;
-          transition: .5s;
-          &:hover {
-            color: $white;
-            //color: #FFFFFF;
-          }
-  }
-
-}
-.top-bar{
   .top-bar-right{
-    	ul {
-			    a.highlight {
-    		  	color: $white;
-			    }
-		  }
+      ul {
+          a{
+            color: $white;
+            font-family: $nav-bar !important;
+            @include transition(.5s);
+            &:hover {
+              color: #ee8710 !important;
+              //color: #FFFFFF;
+            }
+          }
+
+      }
+
+
   }
+
 }
+
 .top-bar-right{
   a.highlight {
-      color: $white;
+      color: #ee8710 !important;
   }
 
 }
@@ -67,22 +64,19 @@
   #name{
     //http://css-tricks.com/centering-percentage-widthheight-elements/
     position: absolute;
+    font-family: $nav-bar !important;
+
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    @include translate(-50%, -50%);
+
   }
   #description{
     text-align: center;
     position: absolute;
     left: 50%;
     top: 60%;
-    transform: translate(-50%, -60%);
-    -webkit-transform: translate(-50%, -60%);
-    -o-transform: translate(-50%, -60%);
-    -ms-transform: translate(-50%, -60%);
+    @include translate(-50%, -60%);
   }
 }
 .slick-prev:before, .slick-next:before {
@@ -100,25 +94,22 @@
         &:hover{
           @include scale(1.3);
           //https://productforums.google.com/forum/#!topic/chrome/w4YlFvEMQNw
-          -webkit-transition: transform 1s ease-in-out;
-              -moz-transition: transform 1s ease-in-out;
-              transition: transform 1s ease-in-out;
+          @include transition( transform 1s ease-in-out);
+              // -webkit-transition: transform 1s ease-in-out;
+              // -moz-transition: transform 1s ease-in-out;
+              // transition: transform 1s ease-in-out;
 
         }
       }
 	}
 
 }
-.no-js {
-  @include breakpoint(small only) {
-    .top-bar {
-      display: none;
-    }
-  }
-
-  @include breakpoint(medium) {
-    .title-bar {
-      display: none;
-    }
-  }
+#Video{
+  background: url(../data/pics/amazing-view.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
