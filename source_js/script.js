@@ -5,13 +5,13 @@ $('.top-bar-right ul').css('background-color', 'transparent');
 $(document).on("scroll",function(){
 
   if ($(this).scrollTop() > 200) {
-        $('.top-bar-left a').css('font-size', '75%');
-        $('.top-bar-right a').css('font-size', '75%');
+        $('.top-bar-left a').css('font-size', '85%');
+        $('.top-bar-right a').css('font-size', '85%');
 
         if($(this).scrollTop() > 400){
-          $('.top-bar-left ul').css('background-color', '#777');
-          $('.top-bar-right ul').css('background-color', '#777');
-          $('.top-bar').css('background-color', '#777');
+          $('.top-bar-left ul').css('background-color', '#222222');
+          $('.top-bar-right ul').css('background-color', '#222222');
+          $('.top-bar').css('background-color', '#222222');
           $('.top-bar').css('border-color', '#777')
           $('.top-bar-left ul').css('border-color', '#777')
           $('.top-bar-right ul').css('border-color', '#777')

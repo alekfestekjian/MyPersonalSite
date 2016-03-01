@@ -3,7 +3,7 @@
   // background: #;round-color: transparent;
   z-index: 999;
   top-bar.show{
-    background-color: #777 !important;
+    background-color: #222222 !important;
   }
   @include transition(.5s);
   .top-bar-left
@@ -17,7 +17,7 @@
 
     }
     ul.show{
-      background-color: #777 !important;
+      background-color: #222222 !important;
 
     }
   }
@@ -90,11 +90,14 @@
 //   height: 100%;
 //   background-size: cover;
 // }
-#sec1{
-  background: #efefef;
+#Section1{
+  // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  // background: #efefef;
+  background: #fff;
 }
 #About{
   margin-top: 2em;
+  color: #777;
   h1{
     font-family: $title !important;
     font-size: 4em;
@@ -108,7 +111,12 @@
     // font-size: 1.8rem;
   }
 }
+#Section2{
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.55) 17%, rgba(0, 0, 0, 0.45) 35%, rgba(0, 0, 0, 0.4) 62%, rgba(0, 0, 0, 0.4) 100%);
+
+}
 #Experience{
+  color: #fff;
   #title{
     h1{
       margin-top: 1em;

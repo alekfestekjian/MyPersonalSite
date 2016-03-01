@@ -53,7 +53,8 @@
       </div>
     </div>
 
-    <section class="row" id="sec1">
+    <!-- #ASK TA -->
+    <div class="small-12 columns" id="Section1">
         <div class="alert column medium-12 large-4 text-center" id="About">
           <div class="text-center">
             <h1>About Me</h1>
@@ -77,11 +78,10 @@
               such as Skiing, Basketball, Soccer and Football!</p>
           </div>
         </div>
+    </div>
 
-
-    </section>
-
-    <section class="row">
+    <!-- <section class="row"> -->
+    <div class="small-12 columns" id="Section2">
       <div class="small-12 medium-8 small-centered columns" id="Experience">
 
         <div class="text-center" id="title">
@@ -119,86 +119,87 @@
                 </div>
               </div>
             </div>
-            <!-- <button id="left" type="button" class="slick-prev">Previous</button>
-            <button id="right"type="button" class="slick-next">Next</button> -->
-          </section>
+        </div>
 
-          <section class="row" id="Books">
-            <!-- Armada Modal -->
-            <div class="alert small-centered columns small-12 medium-8 text-center" id="title">
-              <h1>My favorite books</h1>
-              <h2>Click to get a quick summary!</h2>
+          <!-- </section> -->
+        <div class="small-12 columns" id="Books">
+          <div class="alert small-centered columns small-12 medium-8 text-center" id="title">
+            <h1>My favorite books</h1>
+            <h2>Click to get a quick summary!</h2>
+          </div>
+          <div class="Modals">
+            <div class=" columns small-12 medium-4" id="ArmadaPic">
+              <div id="ArmadaBook">
+                <a data-open="Armada"><img src="./data/pics/Armada.jpg" alt="Armada" id="ArmadaPic"></a>
+              </div>
             </div>
-            <div class="Modals">
-              <div class=" columns small-12 medium-4" id="ArmadaPic">
-                <div id="ArmadaBook">
-                  <a data-open="Armada"><img src="./data/pics/Armada.jpg" alt="Armada" id="ArmadaPic"></a>
+
+            <div class="reveal" id="Armada" data-reveal>
+              <h1>Armada</h1>
+              <!-- <p class="lead">Your couch. It is mine.</p> -->
+              <p>High school student Zack Lightman glances out his classroom window and spots a UFO.
+                The ship he’s staring at is straight out of the video game he plays every night,
+                a hugely popular online flight simulator called Armada,
+                in which gamers protect Earth from alien invaders.</p>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <!--Thinking Fast and Slow Modal -->
+
+              <div class=" columns small-12 medium-4">
+                <div id="Fast">
+                  <a data-open="FastBook" > <img src="./data/pics/FastBook.jpg" alt="Thinking Fast and Slow" id="FastPic"></a>
                 </div>
               </div>
 
-              <div class="reveal" id="Armada" data-reveal>
-                <h1>Armada</h1>
+              <div class="reveal" id="FastBook" data-reveal>
+                <h1>Thinking Fast and Slow</h1>
                 <!-- <p class="lead">Your couch. It is mine.</p> -->
-                <p>High school student Zack Lightman glances out his classroom window and spots a UFO.
-                  The ship he’s staring at is straight out of the video game he plays every night,
-                  a hugely popular online flight simulator called Armada,
-                  in which gamers protect Earth from alien invaders.</p>
+                <p>The book's central thesis is a dichotomy between two modes of thought:
+                  "System 1" is fast, instinctive and emotional; "System 2" is slower,
+                  more deliberative, and more logical. The book delineates cognitive biases associated with each type of thinking,
+                  starting with Kahneman's own research on loss aversion.
+                  From framing choices to people's tendency to substitute an easy-to-answer question for one that is harder,
+                  the book highlights several decades of academic research to suggest that people place too much confidence in human judgment.</p>
                   <button class="close-button" data-close aria-label="Close modal" type="button">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <!--Thinking Fast and Slow Modal -->
+                <!-- Mastery Book -->
 
                 <div class=" columns small-12 medium-4">
-                  <div id="Fast">
-                    <a data-open="FastBook" > <img src="./data/pics/FastBook.jpg" alt="Thinking Fast and Slow" id="FastPic"></a>
+                  <div id="MasteryBook">
+                    <a data-open="Mastery"> <img src="./data/pics/mastery.jpg" alt="Mastery" id="MasteryPic"></a>
                   </div>
                 </div>
 
-                <div class="reveal" id="FastBook" data-reveal>
-                  <h1>Thinking Fast and Slow</h1>
+                <div class="reveal" id="Mastery" data-reveal>
+                  <h1>Mastery</h1>
                   <!-- <p class="lead">Your couch. It is mine.</p> -->
-                  <p>The book's central thesis is a dichotomy between two modes of thought:
-                    "System 1" is fast, instinctive and emotional; "System 2" is slower,
-                    more deliberative, and more logical. The book delineates cognitive biases associated with each type of thinking,
-                    starting with Kahneman's own research on loss aversion.
-                    From framing choices to people's tendency to substitute an easy-to-answer question for one that is harder,
-                    the book highlights several decades of academic research to suggest that people place too much confidence in human judgment.</p>
-                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <p>Robery Greene explains how to become a leader in any given field by examining the
+                    lives and pathways to success of historical masters
+                    such as Mozart, Einstein and Darwin, as well as
+                    "living masters" which Greene interviewed—including Paul Graham, Freddie Roach, Santiago Calatrava,
+                    Temple Grandin, Yoky Matsuoka, V.S. Ramachandran, Teresita Fernandez, Cesar Rodriguez, and Daniel Everett</p>
+                  <button class="close-button" data-close aria-label="Close modal" type="button">
                       <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <!-- Mastery Book -->
-
-                  <div class=" columns small-12 medium-4">
-                    <div id="MasteryBook">
-                      <a data-open="Mastery"> <img src="./data/pics/mastery.jpg" alt="Mastery" id="MasteryPic"></a>
-                    </div>
-                  </div>
-
-                  <div class="reveal" id="Mastery" data-reveal>
-                    <h1>Mastery</h1>
-                    <!-- <p class="lead">Your couch. It is mine.</p> -->
-                    <p>Robery Greene explains how to become a leader in any given field by examining the
-                      lives and pathways to success of historical masters
-                      such as Mozart, Einstein and Darwin, as well as
-                      "living masters" which Greene interviewed—including Paul Graham, Freddie Roach, Santiago Calatrava,
-                      Temple Grandin, Yoky Matsuoka, V.S. Ramachandran, Teresita Fernandez, Cesar Rodriguez, and Daniel Everett</p>
-                    <button class="close-button" data-close aria-label="Close modal" type="button">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
+                  </button>
+                </div>
+          </div>
+        </div>
+          <!-- <section class="row" id="Books">
 
 
-            </div>
+            </section> -->
+        <div class="small-12 columns" id="Video1">
+          <div class="columns small-centered small-12" id="Video" >
+            <iframe width="100%" height="500em" src="https://www.youtube.com/embed/khOaAHK7efc" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+            <!-- <section id="Video1">
 
-            </section>
-
-            <section id="Video1">
-              <div class="columns small-centered small-12" id="Video" >
-                <iframe width="100%" height="500em" src="https://www.youtube.com/embed/khOaAHK7efc" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </section>
+            </section> -->
             <!-- Chat section -->
 
             <footer class="connect" id="footer">
