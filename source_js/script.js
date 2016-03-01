@@ -1,7 +1,15 @@
 // Write any custom javascript functions here
+
+
 $('.top-bar').css('background-color', 'transparent');
 $('.top-bar-left ul').css('background-color', 'transparent');
 $('.top-bar-right ul').css('background-color', 'transparent');
+
+/*
+http://www.bootply.com/109943
+shrinking nav bar
+*/
+
 $(document).on("scroll",function(){
 
   if ($(this).scrollTop() > 200) {
@@ -51,7 +59,7 @@ $('a[href^="#"]').on('click',function (e) {
 
     }
 });
-
+/**http://kenwheeler.github.io/slick/*/
 $(document).ready(function(){
   $('#Internships').eq($('.slick-active').index()).addClass('animated fadeInDown');
   $('#Internships').slick({
@@ -69,6 +77,10 @@ $(document).ready(function(){
   });
 });
 
+
+/*Position derived from*/
+/*https://api.jquery.com/hover/*/
+/*http://stackoverflow.com/questions/23206101/navigation-bar-that-tells-where-you-are*/
 function onScreen() {
     // Check if the top of the page collides with each section
     Foundation.MediaQuery.current
