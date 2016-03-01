@@ -121,6 +121,13 @@ function onScreen() {
 
           });
     }
+    else{
+      $('.top-bar-right ul a#' + 'About-button').removeClass('highlight');
+      $('.top-bar-right ul a#' + 'Experience-button').removeClass('highlight');
+      $('.top-bar-right ul a#' + 'Books-button').removeClass('highlight');
+      $('.top-bar-right ul a#' + 'Video-button').removeClass('highlight');
+
+    }
 }
 
 $(window).on('scroll resize', function () {
