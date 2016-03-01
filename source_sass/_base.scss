@@ -238,11 +238,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
-  height: 100%;
-  width: 100%;
-  color: #fff;;
-  
+  background: #efefef;
 }
 
 #footer{
@@ -255,6 +251,7 @@
 			//http://css-tricks.com/centering-percentage-widthheight-elements/
 			display:table-cell;
 			vertical-align:middle;
+      color: #666;
       i{
         &:hover{
           @include scale(1.3);
@@ -262,7 +259,6 @@
           @include transition( transform 1s ease-in-out);
           color: #337ab7;
         }
-        color: #666;
       }
       a{
         padding-left: .8em;
