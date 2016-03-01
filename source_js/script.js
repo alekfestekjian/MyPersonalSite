@@ -1,37 +1,13 @@
 // Write any custom javascript functions here
-// Write any custom javascript functions here
-// $(document).on("scroll",function(){
-//     if($(document).scrollTop()>100){
-//         $('div').removeclass("large").addClass("small");
-//     } else{
-//         $('div').removeClass("small").addClass("large");
-//     }
-// // })
 $('.top-bar').css('background-color', 'transparent');
 $('.top-bar-left ul').css('background-color', 'transparent');
 $('.top-bar-right ul').css('background-color', 'transparent');
 $(document).on("scroll",function(){
-  // if ($(document).scrollTop() > 200) {
-  //   $('.top-bar-left a').addClass('shrink');
-  //
-  //   if($(this).scrollTop() > 400){
-  //     $('.top-bar-left ul').addClass('show');
-  //     $('.top-bar-right ul').addClass('show');
-  //     $('.top-bar').addClass('show');
-  //
-  //
-  //   }
-  // } else {
-  //   $('.top-bar-right a').removeClass('shrink');
-  //   $('.top-bar-left ul').removeClass('show');
-  //   $('.top-bar-right ul').removeClass('show');
-  //   $('.top-bar').removeClass('show');
-  // }
-
 
   if ($(this).scrollTop() > 200) {
         $('.top-bar-left a').css('font-size', '75%');
         $('.top-bar-right a').css('font-size', '75%');
+
         if($(this).scrollTop() > 400){
           $('.top-bar-left ul').css('background-color', '#777');
           $('.top-bar-right ul').css('background-color', '#777');
@@ -52,9 +28,6 @@ $(document).on("scroll",function(){
 });
 
 $('a[href^="#"]').on('click',function (e) {
-  //get child hash
-
-    // CHeck for when smaller screensize
     Foundation.MediaQuery.current
     if (Foundation.MediaQuery.atLeast('medium')) {
       var target = this.hash;
@@ -82,7 +55,7 @@ $('a[href^="#"]').on('click',function (e) {
 $(document).ready(function(){
   $('#Internships').eq($('.slick-active').index()).addClass('animated fadeInDown');
   $('#Internships').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 700,
     fade: true,
@@ -103,15 +76,6 @@ function onScreen() {
       $('div').each(function() {
           var windowScroll = $(document).scrollTop();
           var navHeight = $('.top-bar').height();
-
-          // if($(window).scrollTop() + $(window).height() == $(document).height()) {
-          //       alert("bottom!");
-          // }
-          // if( windowScroll + navHeight>= $(this).offset().top && windowScroll + navHeight < $(this).offset().top + $(this).height()) {
-          //     $('.top-bar-right ul a#' + $(this).attr('id')+'-button').addClass('highlight');
-          //   } else {
-          //     $('.top-bar-right ul a#' + $(this).attr('id')+'-button').removeClass('highlight');
-          // }
           if($(window).scrollTop() + $(window).height() == $(document).height()) {
               $('.top-bar-right ul a#' +'Video-button').addClass('highlight');
               $('.top-bar-right ul a#' + $(this).attr('id')+'-button').removeClass('highlight');
@@ -142,7 +106,6 @@ function onScreen() {
               }
 
             }
-
 
           });
     }
